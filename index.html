@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilos.css">
+<body>
+    <!--ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Miguel</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBREMÍ</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </header>
+    </div>
+    <!--SECCION INICIO--->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+            <img src="img/foto perfil.png" class="perfil"alt="">
+        </div>
+        <h1>Miguel Angel</h1>
+        <h2>Analista y desarrollador de sistemas de información</h2>
+        <div class="redes">
+            <a href="https://www.instagram.com/ljakersll/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/miguel-moreno-5179161ab/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UCUUA3jj6v98mja4gEYnIkhg" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://github.com/JakersLL" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </div>
+    </section>
+    <!--seccion sobre mi-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Miguel Angel Y.</span> "Soy un desarrollador Freelancer en constante crecimiento, con 2 años de experiencia aprendiendo y trabajando en proyectos personales de desarrollo de software.
+                Mi enfoque se basa en el compromiso y la responsabilidad para ofrecer soluciones de calidad. A través de mi pasión por la tecnología,
+                busco convertir ideas en realidades tangibles. Estoy abierto a considerar ofertas laborales serias que me brinden la oportunidad de
+                seguir creciendo y aprendiendo en esta emocionante carrera como desarrollador Software.<br><br>"Además, me he especializado en la optimización de procesos mediante la implementación de soluciones innovadoras
+                y eficientes. Mi objetivo es diseñar sistemas que simplifiquen y agilicen las tareas diarias, mejorando así la productividad y la experiencia del usuario. Utilizo enfoques metodológicos y prácticas de desarrollo
+                ágil para garantizar la entrega de soluciones de calidad dentro de los plazos establecidos. Estoy constantemente actualizándome en las últimas tendencias y tecnologías del campo, para estar al tanto de las mejores
+                prácticas y ofrecer resultados excelentes.
+            </p>
+                <div class="fila">
+                    <!--datos personales-->
+                    <div class="col">
+                    <h3>Datos personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Cumpleaños</strong>
+                                20-07-2001
+                            </li>
+                            <li>
+                                <strong>Telefonó</strong>
+                                3132351616
+                            </li>
+                            <li>
+                                <strong>Email</strong>
+                                miguelaangel325angel@gmail.com
+                                <li>
+                                    <strong>Website</strong>
+                                    www.ejemplo.com
+                                </li>
+                                <li>
+                                    <strong>Dirección</strong>
+                                    fusagasuga, cundinamarca/Colombia
+                                </li>
+                                <li>
+                                    <strong>Cargo</strong>
+                                    <span>FREELANCER</span>
+                                </li>
+                            </li>
+                        </ul>
+                </div>
+                <!--Intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <a href="juegos.html"><i class="fa-solid fa-gamepad"></i></a>
+                            <span>Juegos</span>
+                        </div>
+                        <div class="interes">
+                            <a href="musica.html"><i class="fa-solid fa-headphones"></i></a>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <a href="deporte.html"><i class="fa-solid fa-bicycle"></i></a>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <a href="codear.html"><i class="fa-solid fa-code"></i></a>
+                            <span>CODEAR</span>
+                        </div>
+                        <div class="interes">
+                            <a href="explorar.html"><i class="fa-solid fa-person-hiking"></i></a>
+                            <span>EXPLORAR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button onclick="descargarPDF()"> Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    <!--SECCION DE SKILLS-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>SKILLS</h2>
+            <div class="fila">
+                <!--Technical skill-->
+                <div class="col">
+                    <h3>Technical skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso Java">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso PHP">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>c# .net</span>
+                        <div class="barra-skill">
+                            <div class="progreso Csharp">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Angular</span>
+                        <div class="barra-skill">
+                            <div class="progreso Angular">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Nodejs</span>
+                        <div class="barra-skill">
+                            <div class="progreso Nodejs">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso Comunicacion">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso TrabajoEnEquipo">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso Creatividad">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso Dedicacion">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Responsabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso Responsabilidad">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>TENCOLOGO analisis y desarrollo en sistemas de información</h4>
+                        <span class="casa">Unstituto SENA</span>
+                        <span class="fecha">2020 - 2022</span>
+                        <p>A lo largo de mi proceso de estudio, he adquirido una sólida base de conocimientos y habilidades en el campo del desarrollo de sistemas de información,
+                            centrándome en el desarrollo de sitios web utilizando tecnologías como HTML, CSS, JavaScript y PHP, así como en la gestión de bases de datos,
+                            manipulación de archivos XML y JSON.
+                        </p>
+                        <div class="conector">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia</h3>
+                    <div class="item der">
+                        <h4>Desarrollador Jr .net/</h4><h4> power platform</h4>
+                        <span class="casa">Americas BPS Contrato de practicas</span>
+                        <span class="fecha">ago/2021 - abr/2022 (9 meses)"</span>
+                        <p>
+                            Desarrollador Jr .net
+                            desarrollo de aplicaciones web con el lenguaje de programacion c# y ASP.NET Core en visual studio, creacion de APIS tipo rest.
+                            <br>Manejo de bases de datos,
+                            creacion y analisis de bases de datos SQL server
+                            <br>power platform
+                            creacion de aplicaciones en el entorno de power platform microsoft,
+                            manejo Azure DevOps
+                        </p>
+                        <div class="conector">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Portafolio-->
+    <section id="portafolio" class="portafolio">
+        <div class="contenedor-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                <a href="tetris.html">
+                    <img src="img/gamers.jpg" alt="" width="500" height="200">
+                    <div class="overlay">
+                        <h3>Entretenimiento</h3>
+                        <p>Juego Tetris</p>
+                    </div>
+                </a>
+                </div>
+                <div class="proyecto">
+                <a href="#">
+                    <img src="img/img3.png" alt="" width="500" height="200">
+                    <div class="overlay">
+                        <h3>DISEÑO CREATIVO</h3>
+                        <p>fotografia</p>
+                    </div>
+                </a>
+                </div>
+                <div class="proyecto">
+                <a href="#">
+                    <img src="img/img4.jpg" alt="" width="1000" height="200">
+                    <div class="overlay">
+                        <h3>DISEÑO CREATIVO</h3>
+                        <p>fotografia</p>
+                    </div>
+                </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECCION CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--Formulario-->
+                <div class="col">
+                    <form action="https://formsubmit.co/miguelaangel325angel@gmail.com" method="POST" />
+                    <input type="text" name="name" placeholder="Nombre">
+                    <input type="text" name="email" placeholder="Correo">
+                    <input type="text" name="phone" placeholder="Telefono">
+                    <input type="text" name="subject" placeholder="Asunto">
+                    <textarea name="comments" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </form>
+                </div>
+                <!--Mapa-->
+                <div class="col">
+                    <img src="img/mapa fusa.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                Fusagasuga-Colombia
+                            </li>
+                            <li>
+                                <i class="fa-sharp fa-solid fa-mobile"></i>
+                                Tel: +57 3132351616
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-inbox"></i>
+                                Email: miguelaangel325angel@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--seccion del Pie de pagina Footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.instagram.com/ljakersll/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/miguel-moreno-5179161ab/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UCUUA3jj6v98mja4gEYnIkhg" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://github.com/JakersLL" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
