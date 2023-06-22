@@ -2,46 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MUSICA</title>
+    <title>Musica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="stylesMusica.css"/>
+    <script src="musica.js" defer></script>
 </head>
-    <body>
-    <!--usuario-->
-        <main class="usuario">
+<body>
+    <!--Player-->
+    <main class="player">
 
-    <!--title-->
-    <h1 class="titulo" id="titulo"></h1>
+        <!--title-->
+        <h1 class="title" id="title"></h1>
 
-    <!-- cover -->
-    <img src="#" alt="" class="cover" id="cover">
+        <!--Cover-->
+        <img src="" class="cover" id="cover"></img>
+        <!--barra de sonido
+        <input type="range" id="barra-sonido" min="0" max="100" step="0.1" value="0.5">-->
+        <!-- Audio HTML Media elememt -->
+        <audio src="" id="audio"></audio>
 
-    <!--audio de la cancion por html media element-->
-    <audio src="" id="audio"></audio>
+        <!--barra de progreso-->
+        <div id="progress-container" class="progress-container">
+            <section id="progress" class="progress"></section>
+        </div>
 
-    <!--Progreso de la barra-->
-    <div id="progress-container" class="progress-container">
-        <section id="progress" class="progress"></section>
-    </div>
+        <!--Controles-->
+        <section class="controls">
+            <button class="prev">
+                <i id="prev" class="fas fa-backward"></i>
+            </button>
+            <button class="play">
+                <i id="play" class="fas fa-play"></i>
+            </button>
+            <button class="next">
+                <i id="next" class="fas fa-forward"></i>
+            </button>
+        </section>
 
-    <!--controles-->
-    <section class="controles">
-        <button class="prev">
-            <i id="prev" class="fa fa-backward"></i>
-        </button>
-        <button class="play">
-            <i id="play" class="fa fa-play"></i>
-        </button>
-        <button class="next">
-            <i id="next" class="fa fa-forward"></i>
-        </button>
-    </section>
-    <!--lista de canciones-->
-    <ul class="canciones" id="canciones">
-        <!-- <li><a href="#">Song 1</a></li>
+        <!--ejemplo de canciones-->
+        <ul class="songs" id="songs">
+            <!--<li><a href="#">Song 1</a></li>
             <li><a class="active" href="#">Song 2</a></li>
-            <li><a href="#">Song 3</a></li> -->
-    </ul>
-        </main>
-    </body>
+            <li><a href="#">Song 3</a></li>-->
+        </ul>
+    
+</body>
 </html>
