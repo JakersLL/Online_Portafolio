@@ -30,7 +30,7 @@ let actualSong = null;
 const songs = document.getElementById("songs")
 const audio = document.getElementById("audio")
 const cover = document.getElementById("cover")
-const barraSonido = document.getElementById("barraSonido")
+const volumen = document.querySelector('.volumen')
 const title = document.getElementById("title")
 const play = document.getElementById("play")
 const prev = document.getElementById("prev")
@@ -83,6 +83,13 @@ function loadSong(songIndex) {
     changeSongTitle(songIndex)
     }
 }
+
+//barra volumen
+
+volumen.addEventListener('click', function() {
+    let vol = this.value
+    audio.volume = vol
+})
 
 //actualizar progreso barra del progreso de la canción
 function updateProgress(event) {
@@ -160,6 +167,7 @@ function nextSong() {
 
 // Lanzar siguiente canción cuando se acaba la actual
 audio.addEventListener("ended", () => nextSong())
+
 
 //GO!
 
