@@ -313,11 +313,11 @@ padding: 15px 40px;
     0%{width: 0%;}
     100%{width: 70%;} 
 }
-.skills .skill .Angular{
+.skills .skill .React{
     width: 0%;
-    animation: 2s Angular forwards;
+    animation: 2s React forwards;
 }
-@keyframes Angular{
+@keyframes React{
     0%{width: 0%;}
     100%{width: 60%;} 
 }
@@ -465,7 +465,7 @@ padding: 15px 40px;
     padding: 50px 20px;
 }
 .portafolio .contenedor-seccion{
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
 }
 .portafolio h2{
@@ -487,8 +487,10 @@ padding: 15px 40px;
     cursor: pointer;
 }
 .portafolio .galeria .proyecto img{
-    width: 100%;
-    display: block;
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover;
+    
 }
 .portafolio .galeria .proyecto .overlay{
     position: absolute;

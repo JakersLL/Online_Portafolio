@@ -42,8 +42,8 @@ window.onscroll = function(){
 //funcion para descargar cv pfd// 
 function descargarPDF() {
     var link = document.createElement('a');
-    link.href = 'cv/CV MM.pdf';
-    link.download = 'CV MM.pdf';
+    link.href = 'cv/cv miguel_merged.pdf';
+    link.download = 'cv miguel_merged.pdf';
     link.click();
 }
 
